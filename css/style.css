@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    color: #616161;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /*Свойство основного содержимого, нужное для того, чтобы страница всегда занимала всю высоту окна*/
+}
+.main {
+    flex: 1 1 auto; /*Свойство основного содержимого, нужное для того, чтобы footer всегда прижимался к низу страницы*/
+}
+[class*="__container"] {
+    max-width: 1057px;
+    margin: 0px auto;
+}
+.header__container {
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.header__button {
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    margin: 0px 40px 0px 0px;
+}
+.menu__link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    color: black;
+    letter-spacing: 1px;
+}
+.button {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #FCFDFE;
+    padding: 14px 30px;
+    border-radius: 5px;
+    background-color: #EC5863;
+}
+.button_blue {
+    background-color: #4285F4;
+}
